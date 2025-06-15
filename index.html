@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ZeroBaseOne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="showSection('home')">ZeroBaseOne</div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('news')">新消息</a></li>
+            <li><a href="#" onclick="showSection('about')">關於我</a></li>
+            <li><a href="#" onclick="showSection('photos')">照片區</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 主頁 -->
+<section id="home" class="section">
+    <div class="carousel">
+       <img src="imag拷貝/韓彬照片1.jpg" class="carousel-img active" alt="首頁圖1"/>
+        <img src="imag拷貝/韓彬照片2.jpg" class="carousel-img" alt="首頁圖2"/>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+    </div>
+</section>
+
+<!-- 新消息 -->
+<section id="news" class="section hidden">
+    <h2>新消息</h2>
+    <div class="news-content">
+        <div class="carousel">
+            <img src="imag拷貝/IMG_0644.JPG" class="carousel-img active" alt="消息圖1"/>
+            <img src="imag拷貝/IMG_0631.JPG" class="carousel-img" alt="消息圖2"/>
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
+        </div>
+        <ul class="news-list">
+            <li>6/04 (二) WSWF EP2</li>
+            <li>6/05 (三) 15:33 介紹待機室的朋友
+                18:00 Mcountdown🎤HaMC 放送</li>
+            <li>6/08 (六) 140th Yonsei University 延世大</li>
+            <li>6/12 (四) 15:33 介紹待機室的朋友
+                18:00 Mcountdown🎤HaMC 放送</li>
+            <li>6/13 (五)  🎁韓彬🍀生日🎈✨🎉</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 關於我 -->
+<section id="about" class="section hidden">
+    <h2>關於我</h2>
+    <div class="about-content">
+        <img src="imag拷貝/IMG_0403 2.JPG"  alt="SungHanBin"/>
+        <div>
+            <h3>成韓彬SungHanBin</h3>
+            <p>生日：2001年06月13日<br>專長：TuttingWaacking、Hiphop<br>2023年出演韓國選秀節目《BOYS PLANET》，最終排名第2位，成為限定團體ZEROBASEONE的成員。<br>在團內擔任隊長、主舞、領唱<br></p>
+        </div>
+    </div>
+</section>
+
+<!-- 照片區 -->
+<section id="photos" class="section hidden">
+    <h2>照片區</h2>
+    <div class="photo-gallery">
+        <img src="imag拷貝/IMG_0814.JPG" alt="照片1"/>
+        <img src="imag拷貝/IMG_8859.jpg" alt="照片2"/>
+        <img src="imag拷貝/未命名作品 11.jpg" alt="照片3"/>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
